@@ -1,65 +1,180 @@
+import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div
+      className="min-h-screen w-full font-sans"
+      style={{ background: "var(--bg-gradient)" }}
+    >
+      {/* ── Navbar ─────────────────────────────────────────────────────── */}
+      <nav className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-6 py-4 glass-nav">
+        <div className="flex items-center gap-3">
+          <div
+            className="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm"
+            style={{ background: "var(--btn-primary-bg)" }}
+          >
+            V
+          </div>
+          <span
+            className="font-semibold text-base tracking-tight"
+            style={{ color: "var(--text-primary)" }}
+          >
+            Vhipex Academy
+          </span>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        <div className="hidden md:flex items-center gap-6 text-sm font-medium">
+          {["About", "Academics", "Admissions", "News", "Contact"].map(
+            (item) => (
+              <Link
+                key={item}
+                href={`/${item.toLowerCase()}`}
+                style={{ color: "var(--text-secondary)" }}
+                className="hover:opacity-80 transition-opacity"
+              >
+                {item}
+              </Link>
+            ),
+          )}
+        </div>
+
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+          <Link
+            href="/login"
+            className="btn-primary px-4 py-2 text-sm font-medium"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Student Portal
+          </Link>
+        </div>
+      </nav>
+
+      {/* ── Hero ───────────────────────────────────────────────────────── */}
+      <main className="flex flex-col items-center justify-center min-h-screen px-6 pt-24 pb-16 text-center">
+        {/* Badge */}
+        <div
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium mb-6 glass-sm"
+          style={{ color: "var(--text-secondary)" }}
+        >
+          <span
+            className="w-1.5 h-1.5 rounded-full"
+            style={{ background: "var(--accent-primary)" }}
+          />
+          Admissions open for 2025/2026
+        </div>
+
+        {/* Heading */}
+        <h1
+          className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight max-w-3xl mb-6"
+          style={{ color: "var(--text-primary)" }}
+        >
+          Shaping <span style={{ color: "var(--blue)" }}>Tomorrow's</span>{" "}
+          Leaders Today
+        </h1>
+
+        <p
+          className="text-lg max-w-xl leading-relaxed mb-10"
+          style={{ color: "var(--text-muted)" }}
+        >
+          Vhipex Academy provides world-class education in a nurturing
+          environment, empowering students to reach their full potential
+          academically, socially, and creatively.
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-3 mb-16">
+          <Link
+            href="/admissions"
+            className="btn-primary px-8 py-3 text-sm font-semibold"
           >
-            Documentation
-          </a>
+            Apply Now
+          </Link>
+          <Link
+            href="/about"
+            className="btn-secondary px-8 py-3 text-sm font-semibold"
+          >
+            Learn More
+          </Link>
+        </div>
+
+        {/* ── Stats ──────────────────────────────────────────────────────── */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-3xl mb-16">
+          {[
+            { value: "2,400+", label: "Students Enrolled" },
+            { value: "98%", label: "Pass Rate" },
+            { value: "120+", label: "Qualified Staff" },
+            { value: "25+", label: "Years of Excellence" },
+          ].map((stat) => (
+            <div
+              key={stat.label}
+              className="glass rounded-2xl px-4 py-5 flex flex-col items-center gap-1"
+            >
+              <span
+                className="text-2xl font-bold"
+                style={{ color: "var(--blue)" }}
+              >
+                {stat.value}
+              </span>
+              <span
+                className="text-xs text-center"
+                style={{ color: "var(--text-muted)" }}
+              >
+                {stat.label}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* ── Feature Cards ──────────────────────────────────────────────── */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-3xl">
+          {[
+            {
+              icon: "🎓",
+              title: "Academic Excellence",
+              desc: "Rigorous curriculum designed to challenge and inspire every student.",
+            },
+            {
+              icon: "⚽",
+              title: "Sports & Culture",
+              desc: "A vibrant school life with sports, arts, and extracurricular programs.",
+            },
+            {
+              icon: "💻",
+              title: "Digital Learning",
+              desc: "Modern computer labs and e-learning tools for the 21st century.",
+            },
+          ].map((card) => (
+            <div
+              key={card.title}
+              className="glass rounded-2xl p-6 flex flex-col items-start gap-3 text-left"
+            >
+              <span className="text-2xl">{card.icon}</span>
+              <h3
+                className="text-sm font-semibold"
+                style={{ color: "var(--text-primary)" }}
+              >
+                {card.title}
+              </h3>
+              <p
+                className="text-xs leading-relaxed"
+                style={{ color: "var(--text-muted)" }}
+              >
+                {card.desc}
+              </p>
+            </div>
+          ))}
         </div>
       </main>
+
+      {/* ── Footer strip ───────────────────────────────────────────────── */}
+      <footer
+        className="text-center py-6 text-xs"
+        style={{ color: "var(--text-disabled)" }}
+      >
+        © {new Date().getFullYear()} Vhipex Academy. All rights reserved.
+      </footer>
     </div>
   );
 }
