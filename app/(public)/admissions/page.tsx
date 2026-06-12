@@ -1,3 +1,21 @@
+import {
+  AdmissionsHero,
+  RequirementsList,
+  ApplicationForm,
+} from "@/components/admissions";
+
+export const metadata = {
+  title: "Admissions | VIHIPEX University Institute",
+  description:
+    "Apply to VIHIPEX University Institute for Professionals. ND, HND, Bachelor, and Master programs in Agriculture, IT, Engineering, Health, Business, and more.",
+};
+
 export default function AdmissionsPage() {
-  return <div>Admissions page</div>;
+  return (
+    <main className="min-h-screen">
+      <AdmissionsHero />
+      <RequirementsList />
+      <ApplicationForm />
+    </main>
+  );
 }
