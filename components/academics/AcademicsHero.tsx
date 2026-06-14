@@ -92,7 +92,7 @@ export default function AcademicsHero() {
         >
           Shape Your Career
           <br />
-          <span style={{ color: "var(--accent-primary)" }}>at VHIPEX</span>
+          <span style={{ color: "var(--accent-primary)" }}>at VIHIPEX</span>
         </motion.h1>
 
         {/* Sub */}

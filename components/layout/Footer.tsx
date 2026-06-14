@@ -35,7 +35,7 @@ const LINKS = {
     { label: "Master's Programs", href: "/academics/masters" },
   ],
   Institution: [
-    { label: "About VHIPEX", href: "/about" },
+    { label: "About VIHIPEX", href: "/about" },
     { label: "Leadership & Faculty", href: "/about/faculty" },
     { label: "Accreditation", href: "/about/accreditation" },
     { label: "Campus Life", href: "/campus" },
@@ -398,7 +398,7 @@ export default function Footer() {
                     letterSpacing: "0.02em",
                   }}
                 >
-                  VHIPEX
+                  VIHIPEX
                 </span>
                 <span
                   style={{
@@ -453,7 +453,7 @@ export default function Footer() {
                 },
                 {
                   icon: <IconMail size={14} stroke={1.8} />,
-                  text: "info@vhipex.cm",
+                  text: "info@VIHIPEX.cm",
                 },
               ].map(({ icon, text }) => (
                 <div key={text} className="flex items-center gap-2">
@@ -541,8 +541,8 @@ export default function Footer() {
           className="pt-7 flex flex-col sm:flex-row items-center justify-between gap-3"
         >
           <p className="text-[12px] m-0" style={{ color: "var(--text-muted)" }}>
-            © {new Date().getFullYear()} VHIPEX University Institute. All rights
-            reserved.
+            © {new Date().getFullYear()} VIHIPEX University Institute. All
+            rights reserved.
           </p>
           <div className="flex gap-5">
             {["Privacy Policy", "Terms of Use", "Cookie Policy"].map((item) => (

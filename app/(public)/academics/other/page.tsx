@@ -3,7 +3,7 @@ import { getCategoryBySlug } from "@/data/programs";
 
 export const metadata = {
   title: "Other Programs | VIHIPEX University Institute",
-  description: "Browse all other professional programs at VHIPEX.",
+  description: "Browse all other professional programs at VIHIPEX.",
 };
 
 export default function Page() {

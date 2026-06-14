@@ -324,7 +324,7 @@ export default function MissionVision() {
             style={{ color: "var(--text-muted)" }}
           >
             Six principles that guide every decision, program, and interaction
-            at VHIPEX
+            at VIHIPEX
           </p>
         </motion.div>
 

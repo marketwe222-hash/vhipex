@@ -3,7 +3,7 @@ import { getCategoryBySlug } from "@/data/programs";
 
 export const metadata = {
   title: "CQP / DQP Short Courses | VIHIPEX University Institute",
-  description: "Browse all CQP, DQP, and AQP short courses at VHIPEX.",
+  description: "Browse all CQP, DQP, and AQP short courses at VIHIPEX.",
 };
 
 export default function Page() {

@@ -299,7 +299,7 @@ export default function StatsSection() {
             className="text-[clamp(1rem,1.6vw,1.1rem)] max-w-[52ch] mx-auto m-0 leading-relaxed"
             style={{ color: "var(--text-secondary)" }}
           >
-            Since our founding, VHIPEX has shaped thousands of careers across
+            Since our founding, VIHIPEX has shaped thousands of careers across
             Central Africa with accredited, industry-linked education.
           </p>
         </motion.div>

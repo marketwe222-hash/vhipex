@@ -3,7 +3,7 @@ import { getCategoryBySlug } from "@/data/programs";
 
 export const metadata = {
   title: "Agriculture Programs | VIHIPEX University Institute",
-  description: "Browse all Agriculture programs at VHIPEX.",
+  description: "Browse all Agriculture programs at VIHIPEX.",
 };
 
 export default function Page() {

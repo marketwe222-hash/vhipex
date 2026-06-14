@@ -18,7 +18,7 @@ const MILESTONES = [
     period: "Year 1",
     title: "Foundation & First Classes",
     description:
-      "VHIPEX University Institute was established in Yaoundé, Cameroon as a bilingual training center. Officially accredited by MINEFOP under Arrêté No. 000010, the institute launched its first programs for Grade One teacher training in both general and technical education.",
+      "VIHIPEX University Institute was established in Yaoundé, Cameroon as a bilingual training center. Officially accredited by MINEFOP under Arrêté No. 000010, the institute launched its first programs for Grade One teacher training in both general and technical education.",
     highlights: [
       "MINEFOP accreditation secured",
       "Bilingual (FR & EN) instruction launched",
@@ -80,7 +80,7 @@ const MILESTONES = [
     period: "Vision",
     title: "Regional Leadership",
     description:
-      "Expanding international recognition, forging partnerships across Africa and Europe, and positioning VHIPEX as the premier professional university institute in Central Africa — a destination institution for students seeking industry-ready qualifications.",
+      "Expanding international recognition, forging partnerships across Africa and Europe, and positioning VIHIPEX as the premier professional university institute in Central Africa — a destination institution for students seeking industry-ready qualifications.",
     highlights: [
       "International partnerships (Africa & Europe)",
       "Online & distance learning programs",
@@ -351,7 +351,7 @@ export default function Timeline() {
             className="text-sm mb-6 max-w-lg mx-auto"
             style={{ color: "var(--text-secondary)" }}
           >
-            VHIPEX is growing fast. Join 500+ students already building their
+            VIHIPEX is growing fast. Join 500+ students already building their
             careers with us across Bafoussam and Yaoundé.
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">

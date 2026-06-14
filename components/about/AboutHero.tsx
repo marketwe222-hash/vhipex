@@ -184,7 +184,7 @@ export default function AboutHero() {
             color: "var(--text-secondary)",
           }}
         >
-          VHIPEX University Institute for Professionals bridges the gap between
+          VIHIPEX University Institute for Professionals bridges the gap between
           education and employment through practical, industry-aligned programs
           that prepare graduates for real-world success across Cameroon, Central
           Africa, and beyond.

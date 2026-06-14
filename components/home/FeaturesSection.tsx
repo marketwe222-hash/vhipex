@@ -300,7 +300,7 @@ export default function FeaturesSection() {
             className="text-[clamp(1rem,1.6vw,1.1rem)] max-w-[54ch] mx-auto m-0 leading-relaxed"
             style={{ color: "var(--text-secondary)" }}
           >
-            Every program at VHIPEX is designed around what employers in
+            Every program at VIHIPEX is designed around what employers in
             Cameroon and the wider CEMAC region actually need — not just theory,
             but real, deployable skills.
           </p>
@@ -329,7 +329,7 @@ export default function FeaturesSection() {
             className="text-center text-[11.5px] font-semibold tracking-widest uppercase mb-6"
             style={{ color: "var(--text-muted)" }}
           >
-            Why choose VHIPEX
+            Why choose VIHIPEX
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {WHY_US.map((item) => (

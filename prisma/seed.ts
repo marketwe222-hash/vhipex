@@ -17,10 +17,10 @@ async function main() {
   // Admin user
   const adminPassword = await bcrypt.hash("admin123", 12);
   const admin = await prisma.user.upsert({
-    where: { email: "admin@vhipex.edu" },
+    where: { email: "admin@VIHIPEX.edu" },
     update: {},
     create: {
-      email: "admin@vhipex.edu",
+      email: "admin@VIHIPEX.edu",
       password: adminPassword,
       role: "ADMIN",
     },
@@ -30,10 +30,10 @@ async function main() {
   // Sample student
   const studentPassword = await bcrypt.hash("student123", 12);
   const studentUser = await prisma.user.upsert({
-    where: { email: "student@vhipex.edu" },
+    where: { email: "student@VIHIPEX.edu" },
     update: {},
     create: {
-      email: "student@vhipex.edu",
+      email: "student@VIHIPEX.edu",
       password: studentPassword,
       role: "STUDENT",
       student: {

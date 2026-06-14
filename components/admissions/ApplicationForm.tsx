@@ -493,7 +493,7 @@ export default function ApplicationForm() {
               className="text-sm font-semibold"
               style={{ color: "var(--text-primary)" }}
             >
-              victoryinstitute68@gmail.com
+              info@vihipex.com
             </p>
           </div>
           <div className="glass-sm p-4 rounded-xl text-center">

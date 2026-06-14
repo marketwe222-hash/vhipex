@@ -230,7 +230,7 @@ function HeroVideo() {
           src="https://www.youtube.com/embed/38fE4YI04cQ?autoplay=1&mute=1&loop=1&playlist=38fE4YI04cQ&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
           allow="autoplay; encrypted-media"
           allowFullScreen
-          title="VHIPEX University Institute"
+          title="VIHIPEX University Institute"
           style={{
             position: "absolute",
             top: "50%",
@@ -358,7 +358,7 @@ export default function HeroSection() {
                 className="text-[clamp(0.9rem,1.5vw,1.05rem)] leading-relaxed m-0 mb-1 font-medium"
                 style={{ color: "var(--text-muted)", letterSpacing: "0.01em" }}
               >
-                VHIPEX University Institute • Bafoussam & Yaoundé, Cameroon
+                VIHIPEX University Institute • Bafoussam & Yaoundé, Cameroon
               </p>
             </motion.div>
             <motion.p

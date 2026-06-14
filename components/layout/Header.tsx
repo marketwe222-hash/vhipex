@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
@@ -565,6 +565,14 @@ const headerVariants: Variants = {
   },
 };
 
+const navVisibilityVariants: Variants = {
+  visible: { y: 0 },
+  hidden: {
+    y: "-100%",
+    transition: { duration: 0.28, ease: "easeOut" },
+  },
+};
+
 const logoVariants: Variants = {
   hidden: { opacity: 0, x: -16 },
   show: {
@@ -669,10 +677,10 @@ function TopBar({ scrolled }: { scrolled: boolean }) {
             }
           >
             <IconPhone size={12} stroke={1.8} />
-            +237 677 000 000
+            +237 652 761 202
           </a>
           <a
-            href="mailto:info@vhipex.edu"
+            href="mailto:info@vihipex.com"
             style={{
               display: "flex",
               alignItems: "center",
@@ -692,7 +700,7 @@ function TopBar({ scrolled }: { scrolled: boolean }) {
             }
           >
             <IconMail size={12} stroke={1.8} />
-            info@vhipex.edu
+            info@vihipex.com
           </a>
           <Link
             href="/contact"
@@ -1112,7 +1120,7 @@ function ProgramsDropdown({
                 letterSpacing: "0.01em",
               }}
             >
-              VHIPEX Academic Programs
+              VIHIPEX Academic Programs
             </h3>
             <p
               style={{
@@ -1314,83 +1322,7 @@ function ProgramsDropdown({
 function Logo() {
   return (
     <motion.div variants={logoVariants} initial="hidden" animate="show">
-      <Link
-        href="/"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "12px",
-          textDecoration: "none",
-        }}
-      >
-        <motion.div
-          whileHover={{ scale: 1.06, rotate: -2 }}
-          whileTap={{ scale: 0.96 }}
-          transition={{ type: "spring", stiffness: 400, damping: 18 }}
-          style={{
-            width: 42,
-            height: 42,
-            borderRadius: "11px",
-            background: "var(--btn-primary-bg)",
-            boxShadow: "var(--btn-primary-shadow)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexShrink: 0,
-            position: "relative",
-          }}
-        >
-          <span
-            style={{
-              fontFamily: "Georgia, 'Times New Roman', serif",
-              fontWeight: 700,
-              fontSize: "19px",
-              color: "var(--btn-primary-text)",
-              letterSpacing: "-0.5px",
-              lineHeight: 1,
-            }}
-          >
-            V
-          </span>
-          <span
-            style={{
-              position: "absolute",
-              bottom: 6,
-              right: 6,
-              width: 6,
-              height: 6,
-              borderRadius: "50%",
-              background: "var(--accent-secondary)",
-            }}
-          />
-        </motion.div>
-        <div
-          style={{ display: "flex", flexDirection: "column", lineHeight: 1.1 }}
-        >
-          <span
-            style={{
-              fontFamily: "Georgia, 'Times New Roman', serif",
-              fontWeight: 700,
-              fontSize: "17px",
-              color: "var(--text-primary)",
-              letterSpacing: "0.02em",
-            }}
-          >
-            VHIPEX
-          </span>
-          <span
-            style={{
-              fontSize: "9px",
-              fontWeight: 600,
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              color: "var(--text-muted)",
-            }}
-          >
-            University Institute
-          </span>
-        </div>
-      </Link>
+      <Image src="/icons/logo.png" alt="Logo" width={120} height={120} />
     </motion.div>
   );
 }
@@ -1944,6 +1876,9 @@ export default function Header() {
   const { theme, toggleTheme } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isHeaderVisible, setHeaderVisible] = useState(true);
+  const lastScrollY = useRef(0);
+  const scrollTicking = useRef(false);
 
   // Top bar is 34px (desktop only). Main nav is 68px.
   // Dropdown must appear below both = 34 + 68 = 102px from top.
@@ -1952,16 +1887,46 @@ export default function Header() {
   const dropdownTopOffset = TOP_BAR_HEIGHT + NAV_BAR_HEIGHT;
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
+    lastScrollY.current = window.scrollY;
+
+    const onScroll = () => {
+      const currentY = window.scrollY;
+      setScrolled(currentY > 20);
+
+      if (!scrollTicking.current) {
+        window.requestAnimationFrame(() => {
+          const scrollingDown = currentY > lastScrollY.current;
+
+          if (mobileOpen) {
+            setHeaderVisible(true);
+          } else if (scrollingDown && currentY > 80) {
+            setHeaderVisible(false);
+          } else {
+            setHeaderVisible(true);
+          }
+
+          lastScrollY.current = currentY;
+          scrollTicking.current = false;
+        });
+
+        scrollTicking.current = true;
+      }
+    };
+
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [mobileOpen]);
 
   useEffect(() => setMobileOpen(false), [pathname]);
 
   return (
     <>
-      <div className="fixed top-0 inset-x-0 z-50">
+      <motion.div
+        className="fixed top-0 inset-x-0 z-50"
+        variants={navVisibilityVariants}
+        initial="visible"
+        animate={isHeaderVisible ? "visible" : "hidden"}
+      >
         {/* ── Top bar: contact left, language right (desktop only) ── */}
         <TopBar scrolled={scrolled} />
 
@@ -2174,7 +2139,7 @@ export default function Header() {
             )}
           </AnimatePresence>
         </motion.header>
-      </div>
+      </motion.div>
 
       {/* Backdrop */}
       <AnimatePresence>

@@ -10,8 +10,8 @@ const TEAM_MEMBERS = [
     name: "Mr. Leong Victor",
     role: "Founder & Promoter",
     department: "Executive Leadership",
-    bio: "Visionary leader and founder of VHIPEX University Institute. Committed to transforming vocational and professional education across Central Africa by bridging the gap between academia and the job market.",
-    email: "victoryinstitute68@gmail.com",
+    bio: "Visionary leader and founder of VIHIPEX University Institute. Committed to transforming vocational and professional education across Central Africa by bridging the gap between academia and the job market.",
+    email: "info@vihipex.com",
     phone: "+237 652 761 202",
     location: "Yaoundé & Bafoussam, Cameroon",
     color: "blue",
@@ -137,7 +137,7 @@ export default function TeamSection() {
               color: "var(--text-primary)",
             }}
           >
-            The People Behind VHIPEX
+            The People Behind VIHIPEX
           </h2>
           <p
             className="text-base max-w-2xl mx-auto"
