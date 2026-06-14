@@ -39,7 +39,7 @@ const PROGRAM_HIGHLIGHTS = uniqueLevels.map((l) => {
     ND: "National Diploma (ND)",
     BTS: "BTS",
     HND: "Higher National Diploma (HND)",
-    Licence: "Bachelor's Degree",
+    Licence: "Bachelor Degree",
     Master: "Master's Programs",
     CAPIEMP: "CAPIEMP",
     CAPIET: "CAPIET",
