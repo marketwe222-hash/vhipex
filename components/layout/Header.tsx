@@ -15,7 +15,6 @@ import {
   IconInfoCircle,
   IconBook,
   IconClipboardList,
-  IconNews,
   IconPhoto,
   IconMail,
   IconChevronDown,
@@ -539,7 +538,7 @@ const NAV_LINKS: NavLink[] = [
     href: "/admissions",
     icon: <IconClipboardList size={15} stroke={1.8} />,
   },
-  { label: "News", href: "/news", icon: <IconNews size={15} stroke={1.8} /> },
+
   {
     label: "Gallery",
     href: "/gallery",

@@ -39,7 +39,6 @@ const LINKS = {
     { label: "Leadership & Faculty", href: "/about/faculty" },
     { label: "Accreditation", href: "/about/accreditation" },
     { label: "Campus Life", href: "/campus" },
-    { label: "News & Events", href: "/news" },
     { label: "Gallery", href: "/gallery" },
   ],
   Admissions: [

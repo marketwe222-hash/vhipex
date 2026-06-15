@@ -2,6 +2,11 @@
 
 @import "tailwindcss";
 
+@source "../components/**/*.{ts,tsx}";
+@source "../app/**/*.{ts,tsx}";
+@source "../context/**/*.{ts,tsx}";
+@source "../hooks/**/*.{ts,tsx}";
+
 /* ─────────────────────────────────────────────
    BASE BRAND COLORS (always available)
 ───────────────────────────────────────────── */
