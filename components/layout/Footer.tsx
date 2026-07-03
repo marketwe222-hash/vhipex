@@ -434,7 +434,7 @@ export default function Footer() {
                 },
                 {
                   icon: <IconPhone size={14} stroke={1.8} />,
-                  text: "+237 000 000 000",
+                  text: "+237 652 761 202",
                 },
                 {
                   icon: <IconMail size={14} stroke={1.8} />,

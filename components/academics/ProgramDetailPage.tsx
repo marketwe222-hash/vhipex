@@ -105,7 +105,7 @@ export default function ProgramDetailPage({
         <div className="relative z-5 mx-auto max-w-4xl px-6 py-20 text-center">
           <Link
             href={`/academics/${categorySlug}`}
-            className="inline-flex items-center gap-2 text-sm font-semibold transition mb-8 [color:rgba(255,255,255,0.8)] hover:[color:white]"
+            className="inline-flex items-center gap-2 text-sm font-semibold transition mb-3  [color:rgba(255,255,255,0.8)] hover:[color:white]"
           >
             <IconArrowLeft size={16} />
             Back to {categoryName}
