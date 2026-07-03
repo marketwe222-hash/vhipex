@@ -36,7 +36,7 @@ export function TopBar({ scrolled }: { scrolled: boolean }) {
       >
         <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
           <a
-            href="tel:+237677000000"
+            href="tel:+237652761202"
             style={{
               display: "flex",
               alignItems: "center",
@@ -151,7 +151,9 @@ export function TopBar({ scrolled }: { scrolled: boolean }) {
 export function Logo() {
   return (
     <motion.div variants={logoVariants} initial="hidden" animate="show">
-      <Image src="/icons/logo.png" alt="Logo" width={120} height={120} />
+      <Link href="/" aria-label="Home">
+        <Image src="/icons/logo.png" alt="Logo" width={120} height={120} />
+      </Link>
     </motion.div>
   );
 }
@@ -181,7 +183,7 @@ export function ThemeToggle({
         alignItems: "center",
         justifyContent: "center",
         cursor: "pointer",
-        color: "var(--text-secondary)",
+        color: "var(--text-primary)",
         flexShrink: 0,
       }}
     >
@@ -226,19 +228,19 @@ export function PortalIcon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "var(--text-secondary)",
+          color: "var(--text-primary)",
           textDecoration: "none",
           flexShrink: 0,
           transition: "color 0.18s, background 0.18s",
         }}
         onMouseEnter={(e) => {
           const el = e.currentTarget as HTMLElement;
-          el.style.color = "var(--accent-primary)";
+          el.style.color = "var(--text-primary)";
           el.style.background = "var(--glass-bg)";
         }}
         onMouseLeave={(e) => {
           const el = e.currentTarget as HTMLElement;
-          el.style.color = "var(--text-secondary)";
+          el.style.color = "var(--text-primary)";
           el.style.background = "var(--glass-bg-subtle)";
         }}
       >
