@@ -86,7 +86,11 @@ const GENERAL_REQUIREMENTS = [
   "Proof of previous academic qualifications",
 ];
 
-export default function RequirementsList() {
+export default function RequirementsList({
+  onApplyClick,
+}: {
+  onApplyClick: () => void;
+}) {
   const [selectedProgram, setSelectedProgram] = useState<ProgramLevel>("nd");
 
   const activeProgram = PROGRAMS.find((p) => p.id === selectedProgram)!;
@@ -328,6 +332,34 @@ export default function RequirementsList() {
                 Ministry of Higher Education. Contact our admissions office for
                 guidance on document preparation.
               </p>
+            </motion.div>
+
+            {/* Apply Now Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="flex justify-center"
+            >
+              <button
+                onClick={onApplyClick}
+                className="px-8 py-4 font-semibold text-lg rounded-xl transition-all duration-300"
+                style={{
+                  background: "var(--btn-primary-bg)",
+                  color: "var(--btn-primary-text)",
+                  boxShadow: "var(--btn-primary-shadow)",
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLElement).style.boxShadow =
+                    "var(--btn-primary-shadow-hover)";
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.boxShadow =
+                    "var(--btn-primary-shadow)";
+                }}
+              >
+                Apply Now
+              </button>
             </motion.div>
           </div>
         </div>

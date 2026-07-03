@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import {
   IconUser,
   IconMail,
@@ -31,7 +31,8 @@ const FIELDS_OF_STUDY = [
   "Banking & Finance",
 ];
 
-export default function ApplicationForm() {
+export default function ApplicationForm({ onClose }: { onClose?: () => void }) {
+  const sectionRef = useRef<HTMLElement>(null);
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -47,6 +48,15 @@ export default function ApplicationForm() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    // Scroll to form when it mounts
+    if (onClose && sectionRef.current) {
+      setTimeout(() => {
+        sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [onClose]);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -81,12 +91,17 @@ export default function ApplicationForm() {
         previousQualification: "",
         message: "",
       });
+      // Close the form if onClose is provided
+      if (onClose) {
+        onClose();
+      }
     }, 3000);
   };
 
   if (isSubmitted) {
     return (
       <section
+        ref={sectionRef}
         id="application-form"
         className="relative py-20 overflow-hidden"
         style={{ background: "var(--bg-gradient)" }}
@@ -126,9 +141,21 @@ export default function ApplicationForm() {
               Thank you for your interest in VIHIPEX. Our admissions team will
               review your application and contact you within 5-7 business days.
             </p>
-            <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+            <p className="text-sm mb-8" style={{ color: "var(--text-muted)" }}>
               Check your email for a confirmation message.
             </p>
+            {onClose && (
+              <button
+                onClick={onClose}
+                className="px-6 py-2 text-sm font-semibold rounded-lg"
+                style={{
+                  background: "var(--btn-primary-bg)",
+                  color: "var(--btn-primary-text)",
+                }}
+              >
+                Close
+              </button>
+            )}
           </motion.div>
         </div>
       </section>
@@ -137,6 +164,7 @@ export default function ApplicationForm() {
 
   return (
     <section
+      ref={sectionRef}
       id="application-form"
       className="relative py-20 overflow-hidden"
       style={{ background: "var(--bg-gradient)" }}
@@ -157,7 +185,7 @@ export default function ApplicationForm() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-12"
+          className="text-center mb-12 relative"
         >
           <h2
             className="text-3xl md:text-4xl font-bold mb-4"
@@ -175,6 +203,19 @@ export default function ApplicationForm() {
             Fill out the form below and our admissions team will contact you
             within 5-7 days
           </p>
+          {onClose && (
+            <button
+              onClick={onClose}
+              className="absolute top-0 right-0 w-10 h-10 flex items-center justify-center rounded-lg transition-all"
+              style={{
+                background: "var(--glass-bg)",
+                color: "var(--text-primary)",
+              }}
+              title="Close form"
+            >
+              ✕
+            </button>
+          )}
         </motion.div>
 
         {/* Form */}
