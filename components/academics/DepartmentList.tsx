@@ -29,10 +29,11 @@ const ICONS: Record<string, ReactNode> = {
   cqp: <IconChartBar size={22} stroke={1.8} />,
 };
 
+// Aligned to globals.css brand palette (--blue-500, --red-500, --amber-500, --green-500)
 const COLOR_MAP: Record<string, string> = {
   warning: "#f59e0b",
-  blue: "#3b82f6",
-  red: "#ef4444",
+  blue: "#1a3adb",
+  red: "#dc143c",
   success: "#10b981",
 };
 
@@ -57,7 +58,7 @@ export default function DepartmentList() {
         <div className="text-center mb-12">
           <p
             className="text-xs uppercase tracking-[0.28em] font-semibold mb-3"
-            style={{ color: "var(--accent-primary)" }}
+            style={{ color: "var(--text-link)" }}
           >
             Academic Departments
           </p>
@@ -87,17 +88,17 @@ export default function DepartmentList() {
             style={{
               background:
                 activeFilter === "all"
-                  ? "var(--accent-primary)"
+                  ? "var(--blue-500)"
                   : "var(--glass-bg-subtle)",
               color: activeFilter === "all" ? "white" : "var(--text-secondary)",
-              border: `1px solid ${activeFilter === "all" ? "var(--accent-primary)" : "var(--glass-border)"}`,
+              border: `1px solid ${activeFilter === "all" ? "var(--blue-500)" : "var(--glass-border)"}`,
             }}
           >
             All
           </button>
           {PROGRAM_CATEGORIES.map((cat) => {
             const isActive = activeFilter === cat.slug;
-            const color = COLOR_MAP[cat.color] ?? "#3b82f6";
+            const color = COLOR_MAP[cat.color] ?? "var(--blue-500)";
             return (
               <button
                 key={cat.slug}
@@ -117,11 +118,14 @@ export default function DepartmentList() {
           })}
         </div>
 
-        {/* Cards grid */}
-        <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Cards — masonry via CSS columns */}
+        <motion.div
+          layout
+          className="columns-1 md:columns-2 lg:columns-3 gap-6"
+        >
           <AnimatePresence mode="popLayout">
             {filtered.map((category, index) => {
-              const color = COLOR_MAP[category.color] ?? "#3b82f6";
+              const color = COLOR_MAP[category.color] ?? "var(--blue-500)";
               const icon = ICONS[category.slug] ?? (
                 <IconDeviceDesktop size={22} stroke={1.8} />
               );
@@ -135,7 +139,7 @@ export default function DepartmentList() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ delay: index * 0.06, duration: 0.45 }}
-                  className="group relative overflow-hidden rounded-2xl flex flex-col"
+                  className="group relative overflow-hidden rounded-2xl flex flex-col mb-6 break-inside-avoid"
                   style={{ minHeight: "360px" }}
                 >
                   {/* Cover image */}

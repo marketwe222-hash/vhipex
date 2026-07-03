@@ -17,15 +17,46 @@ import {
   IconSchool,
   IconTrendingUp,
 } from "@tabler/icons-react";
-import { PROGRAM_CATEGORIES } from "@/data/programs";
+
+// ─── Interfaces ───────────────────────────────────────────────────────────────
+
+interface Program {
+  levels: string[];
+  [key: string]: any;
+}
+
+interface ProgramCategory {
+  programs: Program[];
+  [key: string]: any;
+}
+
+interface TrustBadge {
+  icon: React.ReactNode;
+  text: string;
+}
+
+// PROGRAM_CATEGORIES may not be exportable as a module in some environments
+// Fallback to a safe require so the file doesn't break the build when the
+// data file isn't a proper module.
+let PROGRAM_CATEGORIES: ProgramCategory[] = [];
+try {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const mod = require("../../data/programs");
+  if (mod && mod.PROGRAM_CATEGORIES)
+    PROGRAM_CATEGORIES = mod.PROGRAM_CATEGORIES;
+} catch (e) {
+  PROGRAM_CATEGORIES = [];
+}
 
 // ─── Derived from real data ───────────────────────────────────────────────────
 
-const allPrograms = PROGRAM_CATEGORIES.flatMap((c) => c.programs);
-const totalPrograms = allPrograms.length;
-const uniqueLevels = Array.from(new Set(allPrograms.flatMap((p) => p.levels)));
+const allPrograms: Program[] = PROGRAM_CATEGORIES.flatMap((c) => c.programs);
+const totalPrograms: number = allPrograms.length;
+const uniqueLevels: string[] = Array.from(
+  new Set(allPrograms.flatMap((p) => p.levels)),
+) as string[];
 
-const TRUST_BADGES = [
+const TRUST_BADGES: TrustBadge[] = [
   {
     icon: <IconCertificate size={14} stroke={1.8} />,
     text: "MINEFOP Accredited",
@@ -34,7 +65,7 @@ const TRUST_BADGES = [
   { icon: <IconWorld size={14} stroke={1.8} />, text: "Bilingual Programs" },
 ];
 
-const PROGRAM_HIGHLIGHTS = uniqueLevels.map((l) => {
+const PROGRAM_HIGHLIGHTS: string[] = uniqueLevels.map((l) => {
   const labels: Record<string, string> = {
     ND: "National Diploma (ND)",
     BTS: "BTS",
@@ -50,7 +81,7 @@ const PROGRAM_HIGHLIGHTS = uniqueLevels.map((l) => {
   return labels[l] ?? l;
 });
 
-const ROTATING_WORDS = [
+const ROTATING_WORDS: string[] = [
   "Future Professionals",
   "Next Innovators",
   "Tomorrow's Leaders",

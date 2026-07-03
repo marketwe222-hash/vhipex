@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -355,30 +356,15 @@ export default function Footer() {
                   justifyContent: "center",
                   flexShrink: 0,
                   position: "relative",
+                  overflow: "hidden",
                 }}
               >
-                <span
-                  style={{
-                    fontFamily: "Georgia, 'Times New Roman', serif",
-                    fontWeight: 700,
-                    fontSize: "19px",
-                    color: "var(--btn-primary-text)",
-                    letterSpacing: "-0.5px",
-                    lineHeight: 1,
-                  }}
-                >
-                  V
-                </span>
-                <span
-                  style={{
-                    position: "absolute",
-                    bottom: 6,
-                    right: 6,
-                    width: 6,
-                    height: 6,
-                    borderRadius: "50%",
-                    background: "var(--accent-secondary)",
-                  }}
+                <Image
+                  src="/icons/logo.png"
+                  alt="VIHIPEX Logo"
+                  width={26}
+                  height={26}
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <div

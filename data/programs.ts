@@ -72,7 +72,8 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
       "Business, finance, and management programs for the modern economy.",
     color: "warning",
     sectionBadge: "ND / BTS / LICENCE",
-    coverImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+    coverImage:
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
     programs: [
       {
         slug: "accounting",
@@ -305,7 +306,8 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
           {
             embedUrl: "https://www.youtube.com/embed/XsAoCFSd9vg",
             title: "Introduction to International Trade",
-            thumbnail: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            thumbnail:
+              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
             duration: "12:05",
           },
         ],

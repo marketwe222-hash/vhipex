@@ -14,7 +14,7 @@ export const metadata = {
 export default function AcademicsPage() {
   return (
     <main className="min-h-screen">
-      <AcademicsHero />
+      {/* <AcademicsHero /> */}
       <DepartmentList />
       <CurriculumTable />
     </main>
