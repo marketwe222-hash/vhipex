@@ -82,7 +82,7 @@ export default function Header() {
           animate={scrolled ? "scrolled" : "top"}
           transition={{ duration: 0.4, ease: "easeOut" }}
           style={{
-            borderBottom: "1px solid transparent",
+            borderBottom: "none",
             backdropFilter: scrolled ? "var(--navbar-blur)" : "none",
             WebkitBackdropFilter: scrolled ? "var(--navbar-blur)" : "none",
           }}

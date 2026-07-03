@@ -23,7 +23,7 @@ export function TopBar({ scrolled }: { scrolled: boolean }) {
     <div
       className="hidden lg:block"
       style={{
-        borderBottom: "1px solid var(--navbar-border)",
+        borderBottom: "none",
         background: scrolled ? "var(--navbar-bg)" : "transparent",
         backdropFilter: scrolled ? "var(--navbar-blur)" : "none",
         WebkitBackdropFilter: scrolled ? "var(--navbar-blur)" : "none",

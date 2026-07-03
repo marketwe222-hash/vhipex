@@ -3,11 +3,11 @@ import type { Variants } from "framer-motion";
 export const headerVariants: Variants = {
   top: {
     backgroundColor: "rgba(0,0,0,0)",
-    borderBottomColor: "rgba(255,255,255,0)",
+    borderBottomColor: "transparent",
   },
   scrolled: {
     backgroundColor: "var(--navbar-bg)",
-    borderBottomColor: "var(--navbar-border)",
+    borderBottomColor: "transparent",
   },
 };
 
