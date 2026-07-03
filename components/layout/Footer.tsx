@@ -346,11 +346,9 @@ export default function Footer() {
             >
               <div
                 style={{
-                  width: 42,
-                  height: 42,
+                
                   borderRadius: "11px",
-                  background: "var(--btn-primary-bg)",
-                  boxShadow: "var(--btn-primary-shadow)",
+
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -362,40 +360,10 @@ export default function Footer() {
                 <Image
                   src="/icons/logo.png"
                   alt="VIHIPEX Logo"
-                  width={26}
-                  height={26}
+                  width={126}
+                  height={126}
                   style={{ objectFit: "contain" }}
                 />
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  lineHeight: 1.1,
-                }}
-              >
-                <span
-                  style={{
-                    fontFamily: "Georgia, 'Times New Roman', serif",
-                    fontWeight: 700,
-                    fontSize: "17px",
-                    color: "var(--text-primary)",
-                    letterSpacing: "0.02em",
-                  }}
-                >
-                  VIHIPEX
-                </span>
-                <span
-                  style={{
-                    fontSize: "9px",
-                    fontWeight: 600,
-                    letterSpacing: "0.2em",
-                    textTransform: "uppercase",
-                    color: "var(--text-muted)",
-                  }}
-                >
-                  University Institute
-                </span>
               </div>
             </Link>
 
