@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import {
   IconArrowLeft,
+  IconArrowRight,
   IconCertificate,
   IconClock,
   IconList,
@@ -18,53 +22,128 @@ export default function ProgramDetailPage({
   categorySlug,
   program,
 }: ProgramDetailPageProps) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = program.images;
+  const hasMultipleImages = images.length > 1;
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  // Auto-scroll carousel every 5 seconds
+  useEffect(() => {
+    if (!hasMultipleImages) return;
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [images.length, hasMultipleImages]);
+
   return (
     <main className="min-h-screen">
-      <section>
-        <div className="mx-auto max-w-6xl px-6 py-16 mt-16">
+      <section
+        className="relative h-[70vh] flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${images[currentImageIndex]?.url || ""})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%)",
+          }}
+        />
+
+        {/* Navigation Arrows */}
+        {hasMultipleImages && (
+          <>
+            <button
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full p-3 transition z-10 [background:rgba(255,255,255,0.2)] hover:[background:rgba(255,255,255,0.4)]"
+              aria-label="Previous image"
+            >
+              <IconArrowLeft size={24} style={{ color: "white" }} />
+            </button>
+            <button
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full p-3 transition z-10 [background:rgba(255,255,255,0.2)] hover:[background:rgba(255,255,255,0.4)]"
+              aria-label="Next image"
+            >
+              <IconArrowRight size={24} style={{ color: "white" }} />
+            </button>
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)}
+                  className="h-2 rounded-full transition"
+                  style={{
+                    width: currentImageIndex === index ? "24px" : "8px",
+                    background:
+                      currentImageIndex === index
+                        ? "rgba(255,255,255,0.9)"
+                        : "rgba(255,255,255,0.4)",
+                  }}
+                  aria-label={`Go to image ${index + 1}`}
+                />
+              ))}
+            </div>
+          </>
+        )}
+
+        {/* Content */}
+        <div className="relative z-5 mx-auto max-w-4xl px-6 py-20 text-center">
           <Link
             href={`/academics/${categorySlug}`}
-            className="inline-flex items-center gap-2 text-sm font-semibold transition [color:var(--text-muted)] hover:[color:var(--text-primary)]"
+            className="inline-flex items-center gap-2 text-sm font-semibold transition mb-8 [color:rgba(255,255,255,0.8)] hover:[color:white]"
           >
             <IconArrowLeft size={16} />
             Back to {categoryName}
           </Link>
 
-          <div className="mt-8 max-w-3xl">
-            <p
-              className="text-xs uppercase tracking-[0.3em]"
-              style={{ color: "var(--text-muted)" }}
-            >
-              {categoryName}
-            </p>
-            <h1
-              className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl"
-              style={{ color: "var(--text-primary)" }}
-            >
-              {program.name}
-            </h1>
-            <p
-              className="mt-6 text-lg leading-8"
-              style={{ color: "var(--text-secondary)" }}
-            >
-              {program.longDescription}
-            </p>
+          <p
+            className="text-sm uppercase tracking-[0.3em]"
+            style={{ color: "rgba(255,255,255,0.7)" }}
+          >
+            {categoryName}
+          </p>
+          <h1
+            className="mt-6 text-5xl sm:text-6xl font-bold tracking-tight"
+            style={{ color: "white" }}
+          >
+            {program.name}
+          </h1>
+          <p
+            className="mt-6 text-lg sm:text-xl leading-relaxed"
+            style={{ color: "rgba(255,255,255,0.9)" }}
+          >
+            {program.longDescription}
+          </p>
 
-            <div className="mt-8 flex flex-wrap gap-3">
-              <span className="badge badge-neutral inline-flex items-center gap-2 !px-4 !py-2 !text-sm !normal-case tracking-[0.28em] uppercase">
-                <IconClock size={16} />
-                {program.duration}
+          <div className="mt-8 flex flex-wrap gap-3 justify-center">
+            <span className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg [background:rgba(255,255,255,0.15)] [color:white]">
+              <IconClock size={16} />
+              {program.duration}
+            </span>
+            <span className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg [background:rgba(255,255,255,0.15)] [color:white]">
+              <IconCertificate size={16} />
+              {program.levels.join(" / ")}
+            </span>
+            {program.badge ? (
+              <span className="inline-flex items-center px-4 py-2 text-sm font-semibold rounded-lg [background:rgba(220,20,60,0.8)] [color:white] uppercase tracking-widest">
+                {program.badge}
               </span>
-              <span className="badge badge-neutral inline-flex items-center gap-2 !px-4 !py-2 !text-sm !normal-case tracking-[0.28em] uppercase">
-                <IconCertificate size={16} />
-                {program.levels.join(" / ")}
-              </span>
-              {program.badge ? (
-                <span className="badge status-warning !px-4 !py-2 !text-sm tracking-[0.28em] uppercase">
-                  {program.badge}
-                </span>
-              ) : null}
-            </div>
+            ) : null}
           </div>
         </div>
       </section>
@@ -145,35 +224,8 @@ export default function ProgramDetailPage({
               className="mt-3 text-sm leading-7"
               style={{ color: "var(--text-secondary)" }}
             >
-              View images and supporting video topics that illustrate key
-              learning areas.
+              View supporting video topics that illustrate key learning areas.
             </p>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              {program.images.slice(0, 2).map((image, index) => (
-                <div
-                  key={`${image.url}-${index}`}
-                  className="overflow-hidden rounded-3xl"
-                  style={{ background: "var(--glass-bg-subtle)" }}
-                >
-                  <img
-                    src={image.url}
-                    alt={image.alt}
-                    className="h-52 w-full object-cover"
-                  />
-                  <div className="p-4 text-sm">
-                    <p
-                      className="font-semibold"
-                      style={{ color: "var(--text-primary)" }}
-                    >
-                      {image.alt}
-                    </p>
-                    <p className="mt-1" style={{ color: "var(--text-muted)" }}>
-                      {image.caption}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
             {program.videos.length > 0 ? (
               <div className="mt-6 space-y-3 text-sm">
                 <p

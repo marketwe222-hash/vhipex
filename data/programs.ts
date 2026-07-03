@@ -24,7 +24,7 @@ export type CategorySlug =
   | "cqp";
 
 export interface ProgramImage {
-  url: string; // images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop URL
+  url: string; // images.unsplash.com URL
   alt: string;
   caption?: string;
 }
@@ -32,7 +32,7 @@ export interface ProgramImage {
 export interface ProgramVideo {
   embedUrl: string; // YouTube embed URL
   title: string;
-  thumbnail: string; // images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop thumbnail
+  thumbnail: string; // images.unsplash.com thumbnail
   duration?: string; // e.g. "12:45"
 }
 
@@ -73,7 +73,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
     color: "warning",
     sectionBadge: "ND / BTS / LICENCE",
     coverImage:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
     programs: [
       {
         slug: "accounting",
@@ -102,22 +102,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&h=500&fit=crop",
             alt: "Accounting students in class",
             caption: "Students learning financial accounting principles",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
             alt: "Spreadsheet and financial analysis",
             caption: "Hands-on training with accounting software",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=500&fit=crop",
             alt: "Auditing documents",
             caption: "Practical auditing lab sessions",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1554224311-beee2c446136?w=800&h=500&fit=crop",
             alt: "Tax and ledger work",
             caption: "Tax filing and ledger management",
           },
@@ -127,14 +127,14 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/qjnq3MJMwnI",
             title: "Introduction to Financial Accounting",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&h=500&fit=crop",
             duration: "8:24",
           },
           {
             embedUrl: "https://www.youtube.com/embed/V9OYcMYbGRg",
             title: "OHADA Standards Explained",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
             duration: "11:05",
           },
         ],
@@ -165,17 +165,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?w=800&h=500&fit=crop",
             alt: "Banking operations",
             caption: "Modern banking operations training",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=500&fit=crop",
             alt: "Credit and loan management",
             caption: "Credit analysis and lending procedures",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
             alt: "Customer service in banking",
             caption: "Customer relations in financial services",
           },
@@ -185,14 +185,14 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/4LNmBPfCDqk",
             title: "Banking Operations Overview",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?w=800&h=500&fit=crop",
             duration: "9:30",
           },
           {
             embedUrl: "https://www.youtube.com/embed/kgO1p2SfGEs",
             title: "Credit Analysis Techniques",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=500&fit=crop",
             duration: "14:12",
           },
         ],
@@ -224,22 +224,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop",
             alt: "Marketing team collaboration",
             caption: "Marketing strategy workshops",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=800&h=500&fit=crop",
             alt: "Digital marketing",
             caption: "Digital marketing and social media campaigns",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=500&fit=crop",
             alt: "Sales presentation",
             caption: "Sales pitch and presentation training",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=500&fit=crop",
             alt: "Market research",
             caption: "Consumer research and market analysis",
           },
@@ -249,14 +249,14 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/nfqNGVGJMp4",
             title: "Marketing Strategy Fundamentals",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop",
             duration: "10:18",
           },
           {
             embedUrl: "https://www.youtube.com/embed/6sRQpfQkGkc",
             title: "Digital Marketing for Business",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=800&h=500&fit=crop",
             duration: "16:44",
           },
         ],
@@ -287,17 +287,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&h=500&fit=crop",
             alt: "International shipping port",
             caption: "Understanding global trade and logistics",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=500&fit=crop",
             alt: "Customs documentation",
             caption: "Import/export documentation procedures",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=800&h=500&fit=crop",
             alt: "Container logistics",
             caption: "Supply chain and freight management",
           },
@@ -307,7 +307,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/XsAoCFSd9vg",
             title: "Introduction to International Trade",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&h=500&fit=crop",
             duration: "12:05",
           },
         ],
@@ -338,17 +338,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&h=500&fit=crop",
             alt: "Project management team",
             caption: "Project planning and team coordination",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
             alt: "Project scheduling",
             caption: "Gantt charts and project timelines",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=500&fit=crop",
             alt: "Logistics and transport",
             caption: "Logistics and supply chain operations",
           },
@@ -358,7 +358,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/g3nMYAFJDHQ",
             title: "Project Management Essentials",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&h=500&fit=crop",
             duration: "13:22",
           },
         ],
@@ -390,17 +390,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&h=500&fit=crop",
             alt: "Community finance meeting",
             caption: "Microfinance and community lending programs",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=500&fit=crop",
             alt: "NGO community work",
             caption: "NGO management and community development",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800&h=500&fit=crop",
             alt: "Rural finance",
             caption: "Rural credit and savings group management",
           },
@@ -410,7 +410,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/UGkXi5uh_B4",
             title: "Microfinance in Africa",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&h=500&fit=crop",
             duration: "7:50",
           },
         ],
@@ -427,7 +427,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
     color: "blue",
     sectionBadge: "ND / BTS / HND / MASTER",
     coverImage:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=500&fit=crop",
     programs: [
       {
         slug: "software",
@@ -456,22 +456,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=500&fit=crop",
             alt: "Students coding",
             caption: "Hands-on software development labs",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop",
             alt: "Web development",
             caption: "Full-stack web development training",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop",
             alt: "Mobile app development",
             caption: "iOS and Android app development",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop",
             alt: "Cloud infrastructure",
             caption: "Cloud and DevOps engineering",
           },
@@ -481,14 +481,14 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/zOjov-2OZ0E",
             title: "Software Engineering Fundamentals",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=500&fit=crop",
             duration: "15:30",
           },
           {
             embedUrl: "https://www.youtube.com/embed/ysEN5RaKOlA",
             title: "Web Development with Modern Frameworks",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop",
             duration: "18:45",
           },
         ],
@@ -519,17 +519,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&h=500&fit=crop",
             alt: "Hardware repair lab",
             caption: "Computer hardware assembly and repair",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800&h=500&fit=crop",
             alt: "Motherboard components",
             caption: "Component-level hardware diagnostics",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop",
             alt: "Network rack",
             caption: "Network infrastructure installation",
           },
@@ -539,7 +539,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/6qn7Z2-4e6I",
             title: "PC Assembly from Scratch",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&h=500&fit=crop",
             duration: "22:15",
           },
         ],
@@ -571,22 +571,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop",
             alt: "Telecom tower",
             caption: "Mobile network infrastructure and installation",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=500&fit=crop",
             alt: "Fiber optic cables",
             caption: "Fiber optic installation and testing",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=500&fit=crop",
             alt: "Cybersecurity",
             caption: "Network security and penetration testing",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1484807352052-23338990c6c6?w=800&h=500&fit=crop",
             alt: "VoIP systems",
             caption: "VoIP and unified communications setup",
           },
@@ -596,14 +596,14 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/3eHyps6K0WU",
             title: "Introduction to Telecommunications",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop",
             duration: "11:40",
           },
           {
             embedUrl: "https://www.youtube.com/embed/YUFbQyQ5Fkc",
             title: "Network Security Fundamentals",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=500&fit=crop",
             duration: "19:20",
           },
         ],
@@ -634,22 +634,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=500&fit=crop",
             alt: "Construction site",
             caption: "On-site civil engineering training",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=500&fit=crop",
             alt: "Surveying equipment",
             caption: "Topographic surveying with total stations",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=500&fit=crop",
             alt: "AutoCAD design",
             caption: "CAD drafting and structural design",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=500&fit=crop",
             alt: "Urban planning",
             caption: "Urban development and planning concepts",
           },
@@ -659,7 +659,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/SZvTtCFMqHY",
             title: "Civil Engineering Basics",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=500&fit=crop",
             duration: "14:08",
           },
         ],
@@ -690,17 +690,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=500&fit=crop",
             alt: "Electrical panel work",
             caption: "Electrical installation and panel wiring",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=500&fit=crop",
             alt: "PLC automation",
             caption: "PLC programming and industrial automation",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1509390144164-5c94a894d49e?w=800&h=500&fit=crop",
             alt: "Power grid",
             caption: "Power systems and energy distribution",
           },
@@ -710,7 +710,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/mc979OhitAg",
             title: "Electrical Systems Fundamentals",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=500&fit=crop",
             duration: "16:55",
           },
         ],
@@ -742,22 +742,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=500&fit=crop",
             alt: "Graphic design studio",
             caption: "Creative design studio environment",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&h=500&fit=crop",
             alt: "UI/UX design",
             caption: "UI/UX wireframing and prototyping",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=500&fit=crop",
             alt: "Video editing",
             caption: "Video production and post-processing",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=800&h=500&fit=crop",
             alt: "Adobe tools",
             caption: "Adobe Creative Suite training",
           },
@@ -767,14 +767,14 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/WONZVnlam6U",
             title: "Introduction to Graphic Design",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=500&fit=crop",
             duration: "13:10",
           },
           {
             embedUrl: "https://www.youtube.com/embed/c9Wg6Cb_YlU",
             title: "UI/UX Design Principles",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&h=500&fit=crop",
             duration: "20:33",
           },
         ],
@@ -791,7 +791,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
     color: "red",
     sectionBadge: "ND / BTS / LICENCE",
     coverImage:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=500&fit=crop",
     programs: [
       {
         slug: "nursing",
@@ -820,22 +820,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=500&fit=crop",
             alt: "Nursing care",
             caption: "Clinical nursing practice in hospital wards",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=500&fit=crop",
             alt: "Nursing students",
             caption: "Nursing students in clinical training",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1583324113626-70df0f4deaab?w=800&h=500&fit=crop",
             alt: "Medical equipment",
             caption: "Working with medical equipment and instruments",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=800&h=500&fit=crop",
             alt: "Community health",
             caption: "Community health outreach programs",
           },
@@ -845,14 +845,14 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/1oVt6SxWPAI",
             title: "Nursing Fundamentals",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=500&fit=crop",
             duration: "17:22",
           },
           {
             embedUrl: "https://www.youtube.com/embed/c7FEGSjrsW4",
             title: "Patient Care and Assessment",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=500&fit=crop",
             duration: "14:08",
           },
         ],
@@ -883,22 +883,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&h=500&fit=crop",
             alt: "Medical laboratory",
             caption: "State-of-the-art medical laboratory facilities",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&h=500&fit=crop",
             alt: "Microscope work",
             caption: "Microscopy and cell analysis techniques",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&h=500&fit=crop",
             alt: "Blood analysis",
             caption: "Hematology and blood sample analysis",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1628595351029-c2bf17511435?w=800&h=500&fit=crop",
             alt: "Microbiology cultures",
             caption: "Microbiology culture and identification",
           },
@@ -908,7 +908,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/MvFn_LMOmfI",
             title: "Medical Laboratory Techniques",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&h=500&fit=crop",
             duration: "12:44",
           },
         ],
@@ -939,17 +939,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=800&h=500&fit=crop",
             alt: "Midwifery care",
             caption: "Maternity and antenatal care training",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=800&h=500&fit=crop",
             alt: "Neonatal care",
             caption: "Neonatal and postnatal care skills",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&h=500&fit=crop",
             alt: "Prenatal healthcare",
             caption: "Antenatal consultations and monitoring",
           },
@@ -959,7 +959,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/0LD7JZZjWoU",
             title: "Introduction to Midwifery Practice",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=800&h=500&fit=crop",
             duration: "10:15",
           },
         ],
@@ -991,17 +991,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=500&fit=crop",
             alt: "Pharmacy dispensing",
             caption: "Drug dispensing and pharmacy management",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=800&h=500&fit=crop",
             alt: "Pharmaceutical products",
             caption: "Pharmaceutical inventory and storage management",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1576602976047-174e57a47881?w=800&h=500&fit=crop",
             alt: "Patient counseling",
             caption: "Patient medication counseling skills",
           },
@@ -1011,7 +1011,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/7vHqPRCFhpI",
             title: "Pharmacy Technology Overview",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=500&fit=crop",
             duration: "9:58",
           },
         ],
@@ -1042,17 +1042,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=500&fit=crop",
             alt: "Physiotherapy session",
             caption: "Rehabilitation and physiotherapy exercises",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=500&fit=crop",
             alt: "Sports therapy",
             caption: "Sports physiotherapy and injury recovery",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1544046345-346bc36d82b7?w=800&h=500&fit=crop",
             alt: "Electrotherapy",
             caption: "Electrotherapy and physical medicine equipment",
           },
@@ -1062,7 +1062,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/0lNbBfSBSCc",
             title: "Physiotherapy Techniques",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=500&fit=crop",
             duration: "11:30",
           },
         ],
@@ -1094,17 +1094,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=500&fit=crop",
             alt: "Nutrition science",
             caption: "Clinical nutrition and dietetics study",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?w=800&h=500&fit=crop",
             alt: "Food science lab",
             caption: "Food science and nutritional analysis",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=800&h=500&fit=crop",
             alt: "Dietitian counseling",
             caption: "Nutritional counseling and diet planning",
           },
@@ -1114,7 +1114,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/6oZjJVMxsMU",
             title: "Nutrition and Dietetics Fundamentals",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=500&fit=crop",
             duration: "15:00",
           },
         ],
@@ -1145,17 +1145,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&h=500&fit=crop",
             alt: "Dental clinic",
             caption: "Dental therapy clinical training",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&h=500&fit=crop",
             alt: "Dental instruments",
             caption: "Clinical dental instruments and procedures",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1609864257613-bd6e7d6f2b10?w=800&h=500&fit=crop",
             alt: "Dental prosthetics",
             caption: "Dental prosthetics and restoration techniques",
           },
@@ -1165,7 +1165,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/Y_LVlRSWkik",
             title: "Introduction to Dental Therapy",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&h=500&fit=crop",
             duration: "8:40",
           },
         ],
@@ -1196,17 +1196,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=800&h=500&fit=crop",
             alt: "Eye examination",
             caption: "Clinical optometry and vision testing",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1626447851957-d7fa96af4133?w=800&h=500&fit=crop",
             alt: "Contact lens fitting",
             caption: "Contact lens fitting and dispensing",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1583127370093-268e6e6fb81c?w=800&h=500&fit=crop",
             alt: "Optical dispensing",
             caption: "Optical dispensing and frame selection",
           },
@@ -1216,7 +1216,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/jB5xMDqHuXY",
             title: "Optometry and Vision Care",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=800&h=500&fit=crop",
             duration: "10:22",
           },
         ],
@@ -1232,7 +1232,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
     color: "success",
     sectionBadge: "ND / BTS / LICENCE",
     coverImage:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=500&fit=crop",
     programs: [
       {
         slug: "food",
@@ -1261,17 +1261,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=500&fit=crop",
             alt: "Food processing",
             caption: "Industrial food processing and production",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?w=800&h=500&fit=crop",
             alt: "Quality control",
             caption: "Food quality control and safety testing",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1603899965944-6de5ab397758?w=800&h=500&fit=crop",
             alt: "Food packaging",
             caption: "Food packaging and preservation techniques",
           },
@@ -1281,7 +1281,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/PBhwFLQW-pU",
             title: "Food Technology and Processing",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=500&fit=crop",
             duration: "13:55",
           },
         ],
@@ -1312,17 +1312,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&h=500&fit=crop",
             alt: "Livestock farming",
             caption: "Livestock management and animal husbandry",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&h=500&fit=crop",
             alt: "Poultry farming",
             caption: "Poultry production and farm management",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=500&fit=crop",
             alt: "Veterinary care",
             caption: "Animal health monitoring and veterinary support",
           },
@@ -1332,7 +1332,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/XHydcxVJfgM",
             title: "Livestock Production Essentials",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&h=500&fit=crop",
             duration: "11:18",
           },
         ],
@@ -1363,17 +1363,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=500&fit=crop",
             alt: "Farm machinery",
             caption: "Farm mechanization and tractor operations",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=800&h=500&fit=crop",
             alt: "Irrigation systems",
             caption: "Irrigation system design and installation",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=500&fit=crop",
             alt: "Soil science",
             caption: "Soil science and land management",
           },
@@ -1383,7 +1383,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/OOvIQcHGRoY",
             title: "Agricultural Engineering Overview",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=500&fit=crop",
             duration: "14:30",
           },
         ],
@@ -1415,17 +1415,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&h=500&fit=crop",
             alt: "Agribusiness",
             caption: "Agribusiness and rural entrepreneurship",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=500&fit=crop",
             alt: "Farming cooperative",
             caption: "Cooperative farming and group management",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800&h=500&fit=crop",
             alt: "Agricultural market",
             caption: "Agricultural value chains and markets",
           },
@@ -1435,7 +1435,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/XRVBKn5l3cU",
             title: "Agribusiness in Africa",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&h=500&fit=crop",
             duration: "16:20",
           },
         ],
@@ -1466,17 +1466,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&h=500&fit=crop",
             alt: "Crop field",
             caption: "Tropical crop production and agronomy",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&h=500&fit=crop",
             alt: "Soil and seeds",
             caption: "Soil fertility management and seed planting",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=800&h=500&fit=crop",
             alt: "Crop protection",
             caption: "Integrated pest and disease management",
           },
@@ -1486,7 +1486,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/IgGAtRWOMuc",
             title: "Tropical Agronomy Fundamentals",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&h=500&fit=crop",
             duration: "12:00",
           },
         ],
@@ -1517,12 +1517,12 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=500&fit=crop",
             alt: "Farm aerial view",
             caption: "Farm planning and land management",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=500&fit=crop",
             alt: "Rural development",
             caption: "Rural development and extension services",
           },
@@ -1532,7 +1532,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/1mS_yPnroCs",
             title: "Farm Business Management",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=500&fit=crop",
             duration: "10:45",
           },
         ],
@@ -1548,7 +1548,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
     color: "blue",
     sectionBadge: "CAPIEMP / CAPIET / MASTER",
     coverImage:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop",
     programs: [
       {
         slug: "didactics",
@@ -1577,22 +1577,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&h=500&fit=crop",
             alt: "Teacher in classroom",
             caption: "Classroom teaching and pedagogy training",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop",
             alt: "Curriculum planning",
             caption: "Curriculum design and lesson planning",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=500&fit=crop",
             alt: "Students learning",
             caption: "Interactive classroom teaching methods",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1588072432836-e10032774350?w=800&h=500&fit=crop",
             alt: "Assessment",
             caption: "Student assessment and evaluation techniques",
           },
@@ -1602,14 +1602,14 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/qTMNf3yzGOE",
             title: "Modern Teaching Methods",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&h=500&fit=crop",
             duration: "14:50",
           },
           {
             embedUrl: "https://www.youtube.com/embed/sCVD-IbAFsI",
             title: "Curriculum Design Essentials",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop",
             duration: "11:25",
           },
         ],
@@ -1640,17 +1640,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=500&fit=crop",
             alt: "Counseling session",
             caption: "Career guidance and student counseling",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&h=500&fit=crop",
             alt: "Career advice",
             caption: "Career orientation and job placement support",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=500&fit=crop",
             alt: "Youth mentoring",
             caption: "Youth development and psycho-social support",
           },
@@ -1660,7 +1660,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/FQiMd_YmXIQ",
             title: "Career Guidance Techniques",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=500&fit=crop",
             duration: "9:30",
           },
         ],
@@ -1692,12 +1692,12 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
             alt: "School administration",
             caption: "Educational leadership and school management",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop",
             alt: "Leadership meeting",
             caption: "Educational governance and institutional management",
           },
@@ -1707,7 +1707,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/lmyZMtPVodo",
             title: "Educational Leadership and Administration",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
             duration: "13:15",
           },
         ],
@@ -1738,17 +1738,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop",
             alt: "Professional training",
             caption: "Workplace training and professional development",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=500&fit=crop",
             alt: "E-learning",
             caption: "E-learning and digital training delivery",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&h=500&fit=crop",
             alt: "Vocational training",
             caption: "Vocational and technical skills training",
           },
@@ -1758,7 +1758,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/RHxJCFbWCuY",
             title: "Professional Education Design",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop",
             duration: "12:40",
           },
         ],
@@ -1790,12 +1790,12 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=500&fit=crop",
             alt: "Educational research",
             caption: "Educational research and academic study",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=500&fit=crop",
             alt: "Educational psychology",
             caption: "Educational psychology and cognitive development",
           },
@@ -1805,7 +1805,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/pbFVKS6P3KM",
             title: "Educational Research Methods",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=500&fit=crop",
             duration: "18:00",
           },
         ],
@@ -1821,7 +1821,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
     color: "warning",
     sectionBadge: "ND / BTS / LICENCE",
     coverImage:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=500&fit=crop",
     programs: [
       {
         slug: "bakery",
@@ -1850,22 +1850,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&h=500&fit=crop",
             alt: "Bakery and pastry",
             caption: "Artisan bread and pastry production",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=500&fit=crop",
             alt: "Professional kitchen",
             caption: "Professional kitchen management and operations",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&h=500&fit=crop",
             alt: "Cake decoration",
             caption: "Confectionery arts and cake decoration",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&h=500&fit=crop",
             alt: "Food plating",
             caption: "Food presentation and plating techniques",
           },
@@ -1875,14 +1875,14 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/RiNAFf2fAXk",
             title: "Artisan Baking Fundamentals",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&h=500&fit=crop",
             duration: "16:10",
           },
           {
             embedUrl: "https://www.youtube.com/embed/9zJTZIHFhNQ",
             title: "Pastry Arts and Confectionery",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&h=500&fit=crop",
             duration: "12:30",
           },
         ],
@@ -1914,22 +1914,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=500&fit=crop",
             alt: "Hotel lobby",
             caption: "Hotel front office and guest services",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=500&fit=crop",
             alt: "Restaurant service",
             caption: "Restaurant and food & beverage management",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=800&h=500&fit=crop",
             alt: "Event management",
             caption: "Events and conference management",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&h=500&fit=crop",
             alt: "Housekeeping",
             caption: "Housekeeping operations and standards",
           },
@@ -1939,7 +1939,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/Q2_YYFVWv8Y",
             title: "Hotel Management Operations",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=500&fit=crop",
             duration: "17:45",
           },
         ],
@@ -1970,22 +1970,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1558769132-cb1aea1f1d42?w=800&h=500&fit=crop",
             alt: "Fashion design studio",
             caption: "Fashion design and pattern making studio",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&h=500&fit=crop",
             alt: "Garment construction",
             caption: "Garment construction and sewing techniques",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=500&fit=crop",
             alt: "Fashion illustration",
             caption: "Fashion illustration and design sketching",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1591370874773-6702e8f12fd8?w=800&h=500&fit=crop",
             alt: "Textiles",
             caption: "Textile science and material selection",
           },
@@ -1995,7 +1995,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/XvHrHHM3CYQ",
             title: "Fashion Design Fundamentals",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1558769132-cb1aea1f1d42?w=800&h=500&fit=crop",
             duration: "14:22",
           },
         ],
@@ -2027,22 +2027,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&h=500&fit=crop",
             alt: "Tourism in Cameroon",
             caption: "Cameroon's rich tourism landscape",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=500&fit=crop",
             alt: "Travel agency",
             caption: "Travel agency operations and booking systems",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1528543606781-2f6e6857f318?w=800&h=500&fit=crop",
             alt: "Tour guiding",
             caption: "Professional tour guiding and destination management",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=500&fit=crop",
             alt: "Eco-tourism",
             caption: "Eco-tourism and wildlife tourism management",
           },
@@ -2052,7 +2052,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/pVTmAaFVVEM",
             title: "Tourism and Travel Management",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&h=500&fit=crop",
             duration: "10:55",
           },
         ],
@@ -2068,7 +2068,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
     color: "red",
     sectionBadge: "ND / BTS / LICENCE",
     coverImage:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=500&fit=crop",
     programs: [
       {
         slug: "mechanical",
@@ -2096,17 +2096,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=500&fit=crop",
             alt: "Mechanical workshop",
             caption: "Mechanical engineering workshop training",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&h=500&fit=crop",
             alt: "Manufacturing",
             caption: "Machine operation and manufacturing processes",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=500&fit=crop",
             alt: "CAD design",
             caption: "CAD/CAM design and engineering drawing",
           },
@@ -2116,7 +2116,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/oNq7KVtXaFI",
             title: "Mechanical Engineering Fundamentals",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=500&fit=crop",
             duration: "15:20",
           },
         ],
@@ -2148,17 +2148,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1541844053589-346841d0b34c?w=800&h=500&fit=crop",
             alt: "Oil rig",
             caption: "Petroleum drilling and extraction operations",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&h=500&fit=crop",
             alt: "Oil refinery",
             caption: "Petroleum refinery and processing plant",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=800&h=500&fit=crop",
             alt: "Mining safety",
             caption: "HSE management in petroleum and mining",
           },
@@ -2168,7 +2168,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/UzCQDEAJzuE",
             title: "Introduction to Petroleum Engineering",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1541844053589-346841d0b34c?w=800&h=500&fit=crop",
             duration: "13:40",
           },
         ],
@@ -2200,22 +2200,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=500&fit=crop",
             alt: "Law library",
             caption: "Legal studies and jurisprudence",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=500&fit=crop",
             alt: "Courthouse",
             caption: "Judicial procedures and court practice",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=500&fit=crop",
             alt: "Legal documents",
             caption: "Legal drafting and contract management",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=500&fit=crop",
             alt: "Compliance",
             caption: "Corporate law and compliance practice",
           },
@@ -2225,14 +2225,14 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/MYnFbGpF3tY",
             title: "Introduction to OHADA Business Law",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=500&fit=crop",
             duration: "11:55",
           },
           {
             embedUrl: "https://www.youtube.com/embed/9A6QHAGoNqA",
             title: "Legal Drafting and Documentation",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=500&fit=crop",
             duration: "9:20",
           },
         ],
@@ -2264,22 +2264,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=800&h=500&fit=crop",
             alt: "Journalism",
             caption: "Broadcast journalism and media production",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=500&fit=crop",
             alt: "Public relations",
             caption: "Public relations and corporate communication",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=500&fit=crop",
             alt: "Social media",
             caption: "Social media management and content creation",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=800&h=500&fit=crop",
             alt: "Broadcast studio",
             caption: "Radio and podcast production studio",
           },
@@ -2289,7 +2289,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/bxpDKZ3K4Hw",
             title: "Media and Communication Fundamentals",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=800&h=500&fit=crop",
             duration: "10:08",
           },
         ],
@@ -2320,17 +2320,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop",
             alt: "Electronics lab",
             caption: "Electronic circuit design and testing lab",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=500&fit=crop",
             alt: "Embedded systems",
             caption: "Embedded systems and microcontroller programming",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?w=800&h=500&fit=crop",
             alt: "PCB design",
             caption: "PCB design and soldering techniques",
           },
@@ -2340,7 +2340,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/nb_CPQdN71w",
             title: "Electronic Engineering Basics",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop",
             duration: "14:35",
           },
         ],
@@ -2357,7 +2357,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
     color: "success",
     sectionBadge: "CQP / DQP / AQP",
     coverImage:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=500&fit=crop",
     programs: [
       {
         slug: "secretarial",
@@ -2386,17 +2386,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=500&fit=crop",
             alt: "Office administration",
             caption: "Professional office administration training",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&h=500&fit=crop",
             alt: "Typing skills",
             caption: "Typing speed and word processing skills",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=500&fit=crop",
             alt: "Document management",
             caption: "Document filing and office organization",
           },
@@ -2406,7 +2406,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/q0M-f4G8bLI",
             title: "Office Administration Skills",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=500&fit=crop",
             duration: "8:15",
           },
         ],
@@ -2438,17 +2438,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
             alt: "Computerized accounting",
             caption: "Digital bookkeeping and accounting software",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
             alt: "Excel for accounting",
             caption: "Excel and spreadsheet-based financial reporting",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1554224311-beee2c446136?w=800&h=500&fit=crop",
             alt: "Payroll processing",
             caption: "Payroll processing and employee records",
           },
@@ -2458,7 +2458,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/K_pu1rNnmIE",
             title: "Computerized Accounting with Sage",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
             duration: "11:00",
           },
         ],
@@ -2489,17 +2489,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=800&h=500&fit=crop",
             alt: "Graphic design",
             caption: "Graphic design and digital creative tools",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=500&fit=crop",
             alt: "Web design",
             caption: "Web design and UI mockup creation",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=500&fit=crop",
             alt: "Print design",
             caption: "Print design and brand identity creation",
           },
@@ -2509,7 +2509,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/D1dGRDCU4HA",
             title: "Graphic Design with Adobe Tools",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=800&h=500&fit=crop",
             duration: "9:45",
           },
         ],
@@ -2540,17 +2540,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&h=500&fit=crop",
             alt: "Computer repair",
             caption: "PC hardware repair and maintenance training",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800&h=500&fit=crop",
             alt: "Laptop repair",
             caption: "Laptop disassembly and component replacement",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&h=500&fit=crop",
             alt: "OS installation",
             caption: "Operating system installation and configuration",
           },
@@ -2560,7 +2560,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/S1PzMDRXVgI",
             title: "PC Maintenance and Repair Guide",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&h=500&fit=crop",
             duration: "20:10",
           },
         ],
@@ -2592,17 +2592,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&h=500&fit=crop",
             alt: "CCTV installation",
             caption: "Security camera installation and setup",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&h=500&fit=crop",
             alt: "Security monitoring",
             caption: "CCTV monitoring room and DVR configuration",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&h=500&fit=crop",
             alt: "Access control",
             caption: "Access control system installation",
           },
@@ -2612,7 +2612,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/0bnFhFRTQAY",
             title: "CCTV Installation Guide",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&h=500&fit=crop",
             duration: "18:25",
           },
         ],
@@ -2643,17 +2643,17 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1533159124895-90536ce6de40?w=800&h=500&fit=crop",
             alt: "Satellite dish",
             caption: "Satellite dish installation and alignment",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop",
             alt: "Signal measurement",
             caption: "Signal strength measurement and optimization",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=500&fit=crop",
             alt: "VSAT internet",
             caption: "VSAT satellite internet systems",
           },
@@ -2663,7 +2663,7 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/mj7APiAlQWg",
             title: "Satellite Dish Installation Tutorial",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1533159124895-90536ce6de40?w=800&h=500&fit=crop",
             duration: "15:55",
           },
         ],
@@ -2695,22 +2695,22 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
         ],
         images: [
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&h=500&fit=crop",
             alt: "Solar panel installation",
             caption: "Solar panel installation and commissioning",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&h=500&fit=crop",
             alt: "Battery storage",
             caption: "Battery and inverter system setup",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=500&fit=crop",
             alt: "Off-grid solar",
             caption: "Off-grid solar energy for rural communities",
           },
           {
-            url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+            url: "https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800&h=500&fit=crop",
             alt: "Solar technician",
             caption: "Rooftop solar installation techniques",
           },
@@ -2720,14 +2720,14 @@ export const PROGRAM_CATEGORIES: ProgramCategory[] = [
             embedUrl: "https://www.youtube.com/embed/vOFPoqp2q9I",
             title: "Solar Panel Installation Guide",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&h=500&fit=crop",
             duration: "21:15",
           },
           {
             embedUrl: "https://www.youtube.com/embed/iamJJSMiCVc",
             title: "Off-Grid Solar Systems Explained",
             thumbnail:
-              "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
+              "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&h=500&fit=crop",
             duration: "14:40",
           },
         ],
