@@ -1,8 +1,4 @@
-import {
-  AdmissionsHero,
-  RequirementsList,
-  ApplicationForm,
-} from "@/components/admissions";
+import { RequirementsList, ApplicationForm } from "@/components/admissions";
 
 export const metadata = {
   title: "Admissions | VIHIPEX University Institute",
@@ -13,7 +9,6 @@ export const metadata = {
 export default function AdmissionsPage() {
   return (
     <main className="min-h-screen">
-      <AdmissionsHero />
       <RequirementsList />
       <ApplicationForm />
     </main>

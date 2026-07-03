@@ -92,7 +92,10 @@ export default function RequirementsList() {
   const activeProgram = PROGRAMS.find((p) => p.id === selectedProgram)!;
 
   return (
-    <section id="requirements" className="relative py-20 overflow-hidden">
+    <section
+      id="requirements"
+      className="relative py-20 overflow-hidden pt-[122px]"
+    >
       {/* Background */}
       <div
         className="absolute inset-0 opacity-[0.015]"
