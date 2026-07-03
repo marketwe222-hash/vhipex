@@ -35,9 +35,6 @@ interface TrustBadge {
   text: string;
 }
 
-// PROGRAM_CATEGORIES may not be exportable as a module in some environments
-// Fallback to a safe require so the file doesn't break the build when the
-// data file isn't a proper module.
 let PROGRAM_CATEGORIES: ProgramCategory[] = [];
 try {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -64,22 +61,6 @@ const TRUST_BADGES: TrustBadge[] = [
   { icon: <IconSchool size={14} stroke={1.8} />, text: "Arrêté 000010" },
   { icon: <IconWorld size={14} stroke={1.8} />, text: "Bilingual Programs" },
 ];
-
-const PROGRAM_HIGHLIGHTS: string[] = uniqueLevels.map((l) => {
-  const labels: Record<string, string> = {
-    ND: "National Diploma (ND)",
-    BTS: "BTS",
-    HND: "Higher National Diploma (HND)",
-    Licence: "Bachelor Degree",
-    Master: "Master's Programs",
-    CAPIEMP: "CAPIEMP",
-    CAPIET: "CAPIET",
-    CQP: "CQP",
-    DQP: "DQP",
-    AQP: "AQP",
-  };
-  return labels[l] ?? l;
-});
 
 const ROTATING_WORDS: string[] = [
   "Future Professionals",
@@ -249,12 +230,12 @@ function HeroVideo() {
       initial={{ opacity: 0, x: 48 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.9, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-      className="relative w-full h-full min-h-[420px]"
+      className="relative w-full h-full"
     >
       <motion.div
         whileHover={{ scale: 1.02, rotate: -0.5 }}
         transition={{ type: "spring", stiffness: 260, damping: 22 }}
-        className="absolute top-0 left-[5%] right-0 bottom-[20%] rounded-[20px] overflow-hidden glass"
+        className="absolute top-0 left-0 sm:left-[5%] right-0 bottom-[18%] sm:bottom-[20%] rounded-2xl sm:rounded-[20px] overflow-hidden glass"
         style={{ boxShadow: "0 24px 64px rgba(0,0,0,0.14)" }}
       >
         <iframe
@@ -285,23 +266,29 @@ function HeroVideo() {
         initial={{ opacity: 0, y: 24, scale: 0.9 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ delay: 0.8, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute bottom-[10%] left-0 glass rounded-2xl p-3.5 min-w-[200px]"
+        className="absolute bottom-[6%] sm:bottom-[10%] left-0 glass rounded-xl sm:rounded-2xl p-2.5 sm:p-3.5 min-w-[150px] sm:min-w-[200px]"
         style={{ boxShadow: "0 12px 40px rgba(0,0,0,0.12)" }}
       >
-        <div className="flex items-center gap-2 mb-2">
+        <div className="flex items-center gap-2 mb-1 sm:mb-2">
+          <IconTrendingUp
+            size={16}
+            className="sm:hidden"
+            style={{ color: "var(--accent-primary)" }}
+          />
           <IconTrendingUp
             size={18}
+            className="hidden sm:block"
             style={{ color: "var(--accent-primary)" }}
           />
           <span
-            className="text-xs font-semibold uppercase tracking-wider"
+            className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider"
             style={{ color: "var(--text-muted)" }}
           >
             {totalPrograms} Programs
           </span>
         </div>
         <p
-          className="text-xl font-bold m-0 leading-tight"
+          className="text-base sm:text-xl font-bold m-0 leading-tight"
           style={{
             color: "var(--text-primary)",
             fontFamily: "Georgia, 'Times New Roman', serif",
@@ -310,7 +297,7 @@ function HeroVideo() {
           {PROGRAM_CATEGORIES.length} Fields
         </p>
         <p
-          className="text-[12px] mt-0.5 leading-snug"
+          className="text-[10px] sm:text-[12px] mt-0.5 leading-snug"
           style={{ color: "var(--text-muted)" }}
         >
           {uniqueLevels.length} qualification levels
@@ -351,14 +338,14 @@ export default function HeroSection() {
         style={{ y: yContentSpring }}
         className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-10 2xl:px-12"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center pt-16 pb-20 lg:pt-20 lg:pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pt-10 pb-14 lg:pt-20 lg:pb-24">
           {/* Left */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="show"
           >
-            <motion.div variants={fadeIn} className="flex flex-wrap gap-2 mb-7">
+            <motion.div variants={fadeIn} className="flex flex-wrap gap-2 mb-6">
               {TRUST_BADGES.map(({ icon, text }) => (
                 <span
                   key={text}
@@ -394,32 +381,18 @@ export default function HeroSection() {
             </motion.div>
             <motion.p
               variants={fadeUp}
-              className="text-[clamp(1rem,1.7vw,1.12rem)] leading-relaxed max-w-[52ch] m-0 mb-6"
+              className="text-[clamp(1rem,1.7vw,1.12rem)] leading-relaxed max-w-[52ch] m-0 mb-9"
               style={{ color: "var(--text-secondary)" }}
             >
-              {totalPrograms} accredited programs across{" "}
+              {totalPrograms} accredited programs, from{" "}
+              {uniqueLevels[0] ?? "ND"} to{" "}
+              {uniqueLevels[uniqueLevels.length - 1] ?? "Master"} level, across{" "}
               {PROGRAM_CATEGORIES.length} professional fields — built for real
               industry needs across Central Africa and beyond.
             </motion.p>
-            <motion.div variants={fadeUp} className="flex flex-wrap gap-2 mb-8">
-              {PROGRAM_HIGHLIGHTS.map((program) => (
-                <span
-                  key={program}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[12px] font-medium"
-                  style={{
-                    background: "var(--badge-blue-bg)",
-                    color: "var(--badge-blue-text)",
-                    border: "1px solid var(--input-border)",
-                  }}
-                >
-                  <IconCertificate size={12} stroke={2} />
-                  {program}
-                </span>
-              ))}
-            </motion.div>
             <motion.div
               variants={fadeUp}
-              className="flex flex-wrap gap-3 mb-12"
+              className="flex flex-wrap gap-3 mb-2 lg:mb-12"
             >
               <Link
                 href="/admissions"
@@ -450,7 +423,7 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
           {/* Right */}
-          <div className="hidden lg:block relative h-[520px]">
+          <div className="relative h-[240px] sm:h-[340px] lg:h-[520px]">
             <HeroVideo />
           </div>
         </div>
@@ -459,7 +432,7 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 z-20"
+        className="hidden lg:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-1 z-20"
         style={{ color: "var(--text-muted)" }}
       >
         <span className="text-[10px] tracking-[0.15em] uppercase font-medium">
